@@ -3,6 +3,7 @@ A fully configurable .NET password generator and strength tester library. Suppor
 
 Sample usage
 
+```
 PasswordGenerator p = new PasswordGenerator();
 
 p.length = 8;
@@ -18,3 +19,4 @@ string password = p.Password;
 
 int i = PasswordStrengthTester.Test(password);
 int passwordStrength = i > 100 ? 100 : i;
+```
